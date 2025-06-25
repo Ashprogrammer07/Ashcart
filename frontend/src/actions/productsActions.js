@@ -4,7 +4,7 @@ import { productRequest, productFail, productSuccess, createreviewRequest, creat
 import { updatepasswordRequest, updatepasswordSuccess } from '../slices/authSlices';
 
 
-import axios from 'axios';
+
 import { productsRequest, productsSuccess, productsFail } from '../slices/productsSlice';
 
 export const getProducts = (keyword, price, category, rating, currentPage) => async (dispatch) => {
