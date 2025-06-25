@@ -1,11 +1,8 @@
 import axios from 'axios';
 import { productsRequest, productsFail, productsSuccess, adminproductsRequest, adminproductsSuccess, adminproductsFail } from '../slices/productsSlice';
 import { productRequest, productFail, productSuccess, createreviewRequest, createreviewSuccess, createreviewFail, newproductRequest, newproductSuccess, newproductFail, deleteproductRequest, deleteproductSuccess, deleteproductFail, updateproductFail, updateproductRequest, updateproductSuccess, adminreviewsRequest, adminreviewsSuccess, adminreviewsFail, deletereviewRequest, deletereviewSuccess, deletereviewFail } from '../slices/productSlice';
-import { updatepasswordRequest, updatepasswordSuccess } from '../slices/authSlices';
 
 
-
-import { productsRequest, productsSuccess, productsFail } from '../slices/productsSlice';
 
 export const getProducts = (keyword, price, category, rating, currentPage) => async (dispatch) => {
 
