@@ -39,7 +39,7 @@ const [rating,setRating]=useState(0);
    useEffect(()=>{
     if(error){
     return toast.error(error)}
-    dispatch(getProducts(rating,category,pricechanged,keyword,currentpage))
+    dispatch(getProducts(keyword,pricechanged,category,rating,currentpage))
    },[dispatch,error,currentpage,keyword,pricechanged,category,rating])
 
   const setCurrentpageNO=(PAGENO)=>{
